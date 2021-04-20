@@ -1,0 +1,76 @@
+/*Estilos da página index.html*/
+.cor-de-fundo{
+    background-color: lightgray;
+}
+
+.topo{
+    justify-items:self-end;
+    padding: 70px;
+    background-color: rgb(95, 160, 109);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.backgroud{
+    justify-items:self-end;
+    padding: auto;
+    background-color: rgb(95, 160, 109);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.logo{
+    background-position: center;
+    background-image: url("../img/EFS.png");
+    box-shadow: 1px 1px 4px rgb(44, 44, 44);
+    border-radius: 5px;
+}
+
+.center{
+    text-align: center;
+    padding: 20px;
+}
+
+.letra{
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+
+}
+
+#menu li a:hover{
+    color: darkgray;
+}
+
+.botao{
+   
+    border: none;
+    box-shadow: 1px 1px 4px rgb(40, 40, 40);
+    border-radius: 5px;
+}
+
+.ap-botao:hover{
+    box-shadow: none;
+}
+
+/*Estilos da página contato.html*/
+
+.alinha{
+    flex-direction: column;
+}
