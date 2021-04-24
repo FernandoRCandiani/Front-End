@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>MundoDino</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
     <!--Barras de navegação-->
@@ -19,37 +21,34 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link text-white" href="#">Home <span class="sr-only">(página atual)</span></a>
             </li>
+
             <li class="nav-item active">
               <a class="nav-link text-white" href="#curiosidades">Curiosidades <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dinos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-dark" href="#carnivoros">Carnívoros</a>                
-                <a class="dropdown-item text-dark" href="#herbivoros">Herbívoros</a>
-                <a class="dropdown-item text-dark" href="#onivoros">Onívoros</a>
-              </div>
+
+            <li class="nav-item actice">
+              <a class="nav-link text-white" href="#textosVideos">Textos e Videos <span class="sr-only"></span></a>
             </li>
+
+            <a class="nav-link text-white" href="#contatos">Contatos <span class="sr-only"></span></a>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contatos
-              </a>
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-dark" href="https://pt-br.facebook.com">Facebook</a>
+                <a class="dropdown-item text-dark" href="https://pt-br.facebook.com/fernando.rodriguescandiani">Facebook</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-dark" href="https://github.com">GitHub</a>
+                <a class="dropdown-item text-dark" href="https://github.com/FernandoRCandiani">GitHub</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-dark" href="https://www.linkedin.com">Linkedin</a>
+                <a class="dropdown-item text-dark" href="https://www.linkedin.com/mynetwork/">Linkedin</a>
               </div>
             </li>
           </ul>
+
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
             <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
@@ -65,17 +64,21 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="assets/img/Tiranossauro Rex.jpg" alt="Tiranossauro Rex">
           </div>
+
           <div class="carousel-item">
             <img class="d-block w-100" src="assets/img/Velociraptor.jpg" alt="Velociraptor">
           </div>
+
           <div class="carousel-item">
             <img class="d-block w-100" src="assets/img/Triceratops.jpg" alt="Triceratops">
           </div>
         </div>
+        
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Anterior</span>
@@ -88,14 +91,17 @@
     <!--/Carousel-->
     
     <!--Jumbotron-->
+    <div><h3 id="curiosidades"></h3></div>
+    
     <div class="jumbotron jumbotron-fluid">
-      <div class="container" id="curiosidades">
+      <div class="container">
+        <a href="#"><img src="assets/img/Voltar topo.png" alt=""></a>
         <h1 class="display-4">Curiosidades</h1>
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium cupiditate blanditiis accusamus ad debitis cum, aut tempora laborum voluptatem beatae nulla. Voluptatem dolor voluptatibus, velit ab reiciendis pariatur porro nemo?</p>
       </div>
     </div>
     <!--/Jumbotron-->
-
+    
     <!--Card-->
     <div class="container">
       <div class="card-deck">
@@ -109,6 +115,7 @@
             <small class="text-muted">Atualizados 3 minutos atrás</small>
           </div>
         </div>
+      
         <div class="card">
           <img class="card-img-top" src="assets/img/Vespersaurus.png" alt="Vespersaurus">
           <div class="card-body">
@@ -119,6 +126,7 @@
             <small class="text-muted">Atualizados 3 minutos atrás</small>
           </div>
         </div>
+
         <div class="card">
           <img class="card-img-top" src="assets/img/Pegada de dinossauro.jpg" alt="Pegada de dinossauro">
           <div class="card-body">
@@ -130,90 +138,118 @@
           </div>
         </div>
       </div>
+      
       <!--/Card-->
 
       <!--Texto e Video-->
-      <div class="row mt-5 mb-6">
-        <div class="col-md-12">
-          <h4 class="text-center">
-            Textos e Videos
+      
+      <div>
+        <h3 id="textosVideos"></h3>
+        <div class="row mt-5 mb-5">
+          <div class="col-md-12">
+            <h4 class="text-center">
+              <div class="p-3 mb-2 bg-secondary text-white">
+                <a href="#"><img src="assets/img/Voltar topo.png" alt=""></a>
+                <strong>Textos e Videos.</strong>
+            </h4>
+          </div>
+        </div>
+
+        <div class="row mt-5 mb-6">
+          <div class="col-md-6">
+            <h3>5-Dinossauros Carnívoros</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quo aut quidem, fugit eligendi tenetur delectus. Doloribus similique necessitatibus eos, ea quae dignissimos? Officiis commodi repellendus soluta, aspernatur voluptatum mollitia!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia fuga libero tenetur neque. Minus dolores placeat incidunt tempore quod ut officiis rerum esse obcaecati, eum atque minima eaque nobis?
+            </p>
+          </div>
+          <div class="col-md-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A71MZNCV4vA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-5 mb-6">
+          <div class="col-md-6">
+            <h3>20_Dinossauros Herbívoros</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quo aut quidem, fugit eligendi tenetur delectus. Doloribus similique necessitatibus eos, ea quae dignissimos? Officiis commodi repellendus soluta, aspernatur voluptatum mollitia!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia fuga libero tenetur neque. Minus dolores placeat incidunt tempore quod ut officiis rerum esse obcaecati, eum atque minima eaque nobis?
+            </p>
+          </div>
+          <div class="col-md-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5AoWWyi40A4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-5 mb-6">
+          <div class="col-md-6">
+            <h3>5-Dinossauros Onívoros</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quo aut quidem, fugit eligendi tenetur delectus. Doloribus similique necessitatibus eos, ea quae dignissimos? Officiis commodi repellendus soluta, aspernatur voluptatum mollitia!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia fuga libero tenetur neque. Minus dolores placeat incidunt tempore quod ut officiis rerum esse obcaecati, eum atque minima eaque nobis?
+            </p>
+          </div>
+          <div class="col-md-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VpcdGdwVVTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>    
+    </div>
+    <!--/Texto e Video-->
+
+    <!--Fomulario-->
+    <h3 id="contatos"></h3>
+    <div class="row mt-5 mb-6">
+      <div class="col-md-12">
+        <h4 class="text-center">
+          <div class="p-3 mb-2 bg-secondary text-white">
+            <a href="#"><img src="assets/img/Voltar topo.png" alt=""></a>
+            <strong>Entre em contato com a gente.</strong>
+          </div>
         </h4>
       </div>
-
-      <div class="row mt-5 mb-6">
-        <div class="col-md-6" id="carnivoros">
-          <h3>5-Dinossauros Carnívoros</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quo aut quidem, fugit eligendi tenetur delectus. Doloribus similique necessitatibus eos, ea quae dignissimos? Officiis commodi repellendus soluta, aspernatur voluptatum mollitia!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia fuga libero tenetur neque. Minus dolores placeat incidunt tempore quod ut officiis rerum esse obcaecati, eum atque minima eaque nobis?
-          </p>
-        </div>
-        <div class="col-md-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/A71MZNCV4vA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <hr>
-      <div class="row mt-5 mb-6">
-        <div class="col-md-6" id="herbivoros">
-          <h3>20_Dinossauros Herbívoros</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quo aut quidem, fugit eligendi tenetur delectus. Doloribus similique necessitatibus eos, ea quae dignissimos? Officiis commodi repellendus soluta, aspernatur voluptatum mollitia!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia fuga libero tenetur neque. Minus dolores placeat incidunt tempore quod ut officiis rerum esse obcaecati, eum atque minima eaque nobis?
-          </p>
-        </div>
-        <div class="col-md-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/5AoWWyi40A4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <hr>
-      <div class="row mt-5 mb-6">
-        <div class="col-md-6" id="onivoros">
-          <h3>5-Dinossauros Onívoros</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quo aut quidem, fugit eligendi tenetur delectus. Doloribus similique necessitatibus eos, ea quae dignissimos? Officiis commodi repellendus soluta, aspernatur voluptatum mollitia!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia fuga libero tenetur neque. Minus dolores placeat incidunt tempore quod ut officiis rerum esse obcaecati, eum atque minima eaque nobis?
-          </p>
-        </div>
-        <div class="col-md-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VpcdGdwVVTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <!--/Texto e Video-->
     </div>
 
-      <!--Fomulario-->
-      <div class="row mt-5 mb-6">
-        <div class="col-md-12">
-          <h4 class="text-center">
-            Entre em contato com a gente.
-          </h4>
+    <div>
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <label for="validationCustom01">E-mail</label>
+          <input type="email" class="form-control" id="validationCustom01" placeholder="nome@exemplo.com" required>
+          <div class="valid-feedback">
+            Tudo certo!
+          </div>
+          <div class="invalid-feedback">
+            Por favor, escolha um Endereço de email.
+          </div>
         </div>
-      </div>
-
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Endereço de email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+        
+        <div class="form-row">
+          <label for="validationCustom02">Assunto</label>
+          <textarea class="form-control" id="validationCustom02" rows="3" required></textarea>
+          <div class="valid-feedback">
+            Tudo certo!
+          </div>
+          <div class="invalid-feedback">
+            Por favor, escolha um assunto.
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Assunto</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-
-        <div class="form-group d-flex justify-content-end">
-            <button type="button" class="btn btn-outline-success ">Enviar</button>
+        <div class="form-row d-flex justify-content-end">
+          <button type="submit" class="btn btn-outline-success">Enviar</button>
         </div>
       </form>
-      
-      <!--/Fomulario-->
-    
+    </div>
+    <!--/Fomulario-->
+
 
     <!--Rodapé-->
     <hr>
@@ -221,15 +257,15 @@
      
       <div class="row mb-3">
         <div class="col-md-12 d-flex justify-content-center">          
-            <a href="https://pt-br.facebook.com" target="_blank" class="p-3">
+            <a href="https://pt-br.facebook.com/fernando.rodriguescandiani" target="_blank" class="p-3">
               <img class="tm-social" src="assets/img/facebook.png" alt="Icon do Facebook">
             </a>
 
-            <a href="https://github.com" target="_blank" class="p-3">
+            <a href="https://github.com/FernandoRCandiani" target="_blank" class="p-3">
               <img class="tm-social" src="assets/img/github.png" alt="Icon do GitHub">
             </a>
 
-            <a href="https://www.linkedin.com" target="_blank" class="p-3">
+            <a href="https://www.linkedin.com/mynetwork/" target="_blank" class="p-3">
               <img class="tm-social" src="assets/img/linkedin.png" alt="Icon do Linkedin">
             </a>          
         </div>
@@ -247,6 +283,7 @@
     <!--/Rodapé-->
 
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
